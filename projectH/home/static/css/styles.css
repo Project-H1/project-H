@@ -1,3 +1,7 @@
+/* Custom CSS For the page */
+
+/* Footer CSS Start */
+
 .header-font {
     font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #fd1506;
@@ -92,3 +96,5 @@
   .footer a {
       color: #78828D
   }
+
+/* Footer CSS End */
