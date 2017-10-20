@@ -69,5 +69,12 @@
 	margin: 10px auto 50px;
 	text-align: center;
 }
+.footer ul li a{
+    text-decoration: none;
+
+}
+.footer ul li a:hover{
+    color: rgb(221, 120, 25);
+}
 
 /* Footer CSS End */
