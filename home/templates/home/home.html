@@ -1,0 +1,161 @@
+
+{% extends 'home/head.html' %}
+
+{% block content %}
+
+<!-- load all the static files -->
+{% load static %}
+
+
+<!-- Front Jumbotron -->
+
+<div class="jumbotron jumbotron-fluid bg-primary text-white">
+    <div class="container text-center">
+        <h1 class="display-2">Project-H</h1>
+        <p class="lead">TECH FOR SOCIAL GOOD</p>
+        <hr class="my-4">
+        <p>BECAUSE THE WORLD AIN'T GONNA FIX ITSELF!</p>
+        <div class="py-2 mt-2"></div>
+        <div class="text-center">
+            <p class="lead">
+                <a class="btn btn-light text-dark btn-lg"  role="button">Learn more</a>
+                <a class="btn btn-warning btn-lg" href="{% url 'apply' %}" role="button" >Apply</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- Front Jumbotron End -->
+
+<!-- Our Works -->
+<h2 class="display-4 py-5 mt-5 text-center" >Our Works</h2>
+<div class="container">
+
+    <!-- row for the works card -->
+    <div class="row">
+
+        <!-- single card with dimensions -->
+        <div class="col-md-6 col-lg-4">
+            <div class="card" style="width: 20rem;">
+                <img class="card-img-top" src="{% static "img/people.jpg"%}" alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="card-title">Card title</h4>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-success">Read More...</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- single card with dimensions -->
+        <div class="col-md-6 col-lg-4" >
+            <div class="card" style="width: 20rem;">
+                <img class="card-img-top" src="{% static "img/people.jpg"%}" alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="card-title">Card title</h4>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-success">Read More...</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- single card with dimensions -->
+        <div class="col-md-6 col-lg-4">
+            <div class="card" style="width: 20rem;">
+                <img class="card-img-top" src="{% static "img/people.jpg"%}" alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="card-title">Card title</h4>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-success">Read More...</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="py-4 mt-4"></div>
+<!-- Our Works End -->
+
+<!--About us Page starts here-->
+<div class="container-fluid bg-primary" id="about-us" >
+    <div class="py-5 mt-5"></div>
+    <div class="container">
+        <div class="text-center text-white">
+            <h1 class="display-4" id="about-us-link">About Us</h1>
+            <div class="py-4"></div>
+            <p style="font-size: 20px">Project-H works for, and <em>only</em> works for, forward-thinking organizations and ideas that align with our values. We strategize, we communicate, we build. We make the impossible, possible. Our highly experienced team of software engineers builds best-in-class applications that power our client’s websites, reaching millions of people every year.</p>
+        </div>
+    </div>
+    <div class="py-5 mt-5"></div>
+</div>
+
+<!--about us page ends here-->
+
+<!-- developers -->
+
+<h2 class="display-4 py-5 mt-5 text-center">Meet The Developers</h2>
+
+        <nav class="nav justify-content-center nav-pills flex-column flex-md-row">
+            <a class="nav-link active" href="#Bibek" data-toggle="tab">Bibek Bhandari</a>
+            <a class="nav-link" href="#Jony" data-toggle="tab">Jony Karki</a>
+        </nav>
+        <div class="container text-center">
+            <div class="tab-content py-5">
+
+                    <div class="card w-100 tab-pane active" id="Bibek">
+                            <div class="card-body">
+                              <h4 class="card-title">Bibek Bhandari</h4>
+                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                              <a href="#" class="btn btn-primary">Read More</a>
+                            </div>
+                          </div>
+
+                    <div class="card w-100 tab-pane fade" id="Jony">
+                        <div class="card-body">
+                            <h4 class="card-title">Jony Karki</h4>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+<div class="py-4 mt-4"></div>
+
+<!-- contact  -->
+
+<div class="heading-contact bg-success" id="contact-part">
+    <div class="py-2 mt-2"></div>
+    <div class="row">
+        <div class="col-md-5 text-center">
+            <h1 class="display-4">Hire Us!</h1>
+            <div class="py-2 mt-2"></div>
+            <p style="font-size: 45px; opacity: 0.8;">Because we get the <u>results</u> not just because we give a damn.</p>
+        </div>
+
+        <div class="col-md-1"></div>
+
+        <div class="col-md-6">
+           
+            <form>
+                <div class="form-group">
+                    <label for="client-name">Name</label>
+                    <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Your Name">
+                </div>
+
+                <div class="form-group">
+                    <label for="client-email">Email address</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Your Email">
+                </div>
+
+                <div class="form-group">
+                    <label for="client-message">How can we help you?</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                </div>
+                <button type="button" class="btn btn-outline-light btn-lg">SEND</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- contact end -->
+
+
+{% endblock %}

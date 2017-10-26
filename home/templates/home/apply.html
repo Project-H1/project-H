@@ -1,0 +1,68 @@
+
+{% extends 'home/head.html' %}
+
+{% block content %}
+
+{% load static %}
+
+    <div class="jumbotron jumbotron-fluid bg-primary">
+        <div class="text-center text-white">
+            <h1>Apply For Our Valuable Services</h1>
+            <p>Hooray!, You decided to apply to our services. Now Just select the package that fits your description and you are ready to go.</p>
+
+        </div>
+
+    </div>
+
+
+<!-- card for packages -->
+<div class="container">
+
+            <!-- row for the works card -->
+            <div class="row">
+
+                <!-- single card with dimensions -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card" style="width: 20rem;">
+                        <img class="card-img-top" src="{% static "img/non-profit.gif"%}" alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-title">Non-Profit Organizations</h4>
+                            <p class="card-text">Those organizations involved in Social Services and are not profit oriented fall under this category. We are dedicated to provide free and best service to these kinds of organizations.</p>
+                            <a href="{% url 'nonprofit' %}" class="btn btn-success">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- single card with dimensions -->
+                <div class="col-md-6 col-lg-4" >
+                    <div class="card" style="width: 20rem;">
+                        <img class="card-img-top" src="{% static "img/private.png"%}" alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-title">Private Organizations</h4>
+                            <p class="card-text">Profit driven companies or anyone seeking to use our service for commerical use fall under this category. Private Organizations have to pay a certain amout of fees depending on the service they desire.</p>
+                            <a href="{% url 'private' %}" class="btn btn-success">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- single card with dimensions -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card" style="width: 20rem; ">
+                        <img class="card-img-top" src="{% static "img/ind.jpg"%}" alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-title">Personal</h4>
+                            <p class="card-text">Any individuals with motive of using services for their personal use (not commercial use) are eligible for this package. We may charge from a very less to no money at all depending on the complexity of the service.</p>
+                            <a href="{% url 'individual' %}" class="btn btn-success">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="py-4 mt-4"></div>
+
+
+
+
+<!-- card ends here -->
+
+{% endblock %}

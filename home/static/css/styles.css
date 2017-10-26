@@ -1,0 +1,132 @@
+/* Custom CSS For the page */
+
+/* base css */
+p, h4 {
+	font-family: 'Quicksand', sans-serif !important;
+}
+
+/*navbar css start here */
+a.nav-link.text-white {
+    opacity: 0.8;
+}
+
+a.nav-link.text-white:hover {
+    opacity: 1;
+}
+
+/* navbar css end here */
+
+/* Contact CSS */
+
+#contact-part {
+    height: 530px;
+    padding: 60px;
+}
+
+button.btn.btn-outline-light:hover {
+    color: black;
+}
+
+.heading-contact{
+    width: 100%;
+    height: 250px;
+    background: rgb(11, 160, 160);
+    color: white;
+}
+.heading-contact h1{
+    font-variant: small-caps;
+}
+
+/* Contact CSS END */
+
+
+/* Footer CSS Start */
+
+.footer {
+	height: 409px;
+	background: #3d4951;
+	-webkit-background-position: center;
+	-moz-background-position: center;
+	-ms-background-position: center;
+}
+
+.footer-text {
+	font-size: 14px;
+	font-weight: 300;
+	color: #a6a6a6;
+    width: 100%;
+    padding: 50px 0 0 0;
+    margin: 0px auto;
+	height: 100%;
+    clear: both;
+}
+
+.footer-column {
+    width: 100px;
+	display: inline-block;
+	vertical-align: top;
+	margin-bottom: auto;
+}
+
+.footer-column a {
+    color: white;
+}
+
+.footer-text ul li {
+	margin: 15px 0;
+	list-style-type: none;
+}
+
+.footer-title {
+	font-size: 16px;
+	color: white;
+	font-weight: 500;
+}
+
+.footer-container {
+	width: 650px;
+	margin: 0px auto;
+}
+
+.footer-title p {
+	font-weight: 400;
+	font-size: 0.7em;
+	margin: 10px;
+}
+
+.footer-icon {
+	width: 40px;
+	margin: 40px auto 0;
+}
+
+.footer-icon img {
+	width: 40px;
+}
+
+.footer-copyright {
+	width: 200px;
+	margin: 10px auto 50px;
+	text-align: center;
+}
+.footer ul li a{
+    text-decoration: none;
+
+}
+.footer ul li a:hover{
+    color: rgb(221, 120, 25);
+}
+
+/* Footer CSS End */
+
+
+
+/* Nonprofit forms css here */
+
+#non-jumbo{
+	background: purple;
+}
+
+
+
+
+/* no profit css ends here*/
