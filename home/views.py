@@ -12,6 +12,7 @@ def apply(request):
 def nonprofit(request):
     return render(request, 'home/nonprofit.html')
 
+# private page
 def private(request):
     return render(request, 'home/private.html')
     
